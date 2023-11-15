@@ -4,49 +4,20 @@ layout: page
 
 # About Me
 
-<img src="https://https://DrunkCat69.github.io//Zoso.jpeg" class="floatpic" width="360" height="480">
+<img src="https://drunkcat69.github.io//Zoso.jpeg" class="floatpic" width="360" height="480">
 
-Here is **Huijia Lu (Zoso, 卢汇嘉)**.
+G' day! Here is **Huijia Lu (Zoso, 卢汇嘉)**.
 
-I am a senior student majoring in **EECS** at Fuzhou University and Maynooth University (Ireland, combined degrees). Currently, I work as a research assistant in the IIoT-Lab, advised by [Prof. Zhezhuang Xu](https://www.researchgate.net/profile/Zhezhuang-Xu). I also spent a lovely summer research program with [Prof. Pietro Liò](https://www.cl.cam.ac.uk/~pl219/)'s team at Cambridge University.
+I am a master student major in **Data Science** at the University of Sydney (USYD). I obtained a Graduate Diploma in Economics from East China Normal University (ECNU) in 2020. In 2022, I completed my Bachelor's degree in Accounting at La Trobe University.
 
-If you are interested in any aspect of me, I would love to chat and collaborate, please email me at - *hanlin[dot]cai[at]ieee[dot]org*
+I am now looking for job opportunity related to data analyst or MLE, if you are interested in any aspect of me, I would love to chat and collaborate, please email me at - huijialu0526@gmail.com.
 
 <br>
 
 ## Academic Background
 
-**<font color='red'>[Highlight]</font> I am looking for PhD to start in 2025 Fall. Contact me if you have any leads!**
-
-- **Sep 2020 - June 2024:** Fuzhou University (BEng)
-- **Sep 2020 - June 2024:** Maynooth University (BSc)
-- **June 2022 - Nov 2022:** Cambridge University (Exchange)
-- Expect to apply for a one-year Mphil program and graduate in Sep 2025. Looking for PhD position after that.
+- **Aug 2022 - Apr 2024:** University of Sydney (MDs)
+- **Aug 2020 - June 2022:** La Trobe University (BAcc)
+- **Sep 2018 - June 2020:** East China Normal University (GD in economics)
 
 <br>
-
----
-
-## Research Interests
-
-- Industrial IoT System
-- Network Cybersecurity
-- Applied Machine Learning
-
-My current research focuses on practical problems that artificial intelligence faces in real life. My interests are on the **Machine Learning** and its applications in **Industrial IoT**. In a word, advanced technologies like ML and IoT positively influence the life of everybody.  I wish to devote my talent to this meaningful cause and bring well-being to society.
-
-<br>
-
----
-
-## News and Updates
-
-- **Sep 2023：**Our work [DefenderIoT](https://fzuiot.site/) has been reported by [Youth of FZU](https://mp.weixin.qq.com/s/MF2NJQtEHsVwsm8Ym-l7Gg).
-- **Aug 2023：**Happy to be awarded the FEPG Scholarship.
-- **May 2023：**Happy to be awarded the XiamenAir Scholarship.
-- **May 2023：**Collected the Finalist Award in MCM 2023 (Top 1%).
-- **Jan 2023：**One paper accepted to ICAROB 2023, see you in Japan!
-- **Jun 2022：**Started research program at [Cambridge AI Group](https://www.cl.cam.ac.uk/research/ai/), advised by Prof. Pietro Liò.
-
-<br>
-
