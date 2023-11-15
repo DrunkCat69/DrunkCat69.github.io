@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://https://drunkcat69.github.io//Zoso.jpeg" class="floatpic" width="360" height="480">
+<img src="https://https://DrunkCat69.github.io//Zoso.jpeg" class="floatpic" width="360" height="480">
 
 Here is **Huijia Lu (Zoso, 卢汇嘉)**.
 
