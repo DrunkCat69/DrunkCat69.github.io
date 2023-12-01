@@ -6,18 +6,17 @@ title: Blogs
 
 ## Paper Reading
 
-- [Paper](https://huijialu.com/paper/Paper) <br>
-- [Literature Review](https://huijialu.com/paper/LiteratureReview)
+- [Paper](https://drunkcat69.github.io/blogs/paper/Paper) 
 
 ## Algorithm
 
-- [Machine Learning](https://huijialu.com/Algorithm/Machine Learning) <br>
-- [NLP](https://huijialu.com/Algorithm/NLP)<br>
-- [Audio](https://huijialu.com/Algorithm/Audio)
+- [Machine Learning](https://drunkcat69.github.io/blogs/Algorithm/Machine Learning) <br>
+- [NLP](https://drunkcat69.github.io/blogs/Algorithm/NLP)<br>
+- [Audio](https://drunkcat69.github.io/blogs/Algorithm/Audio)
 
 ## Statistics
 
-- [Probability](https://huijialu.com/Statistics/Probability)<br>
+- [Probability](https://drunkcat69.github.io/blogs/Statistics/Probability)<br>
 
 ## Leave a Message
 

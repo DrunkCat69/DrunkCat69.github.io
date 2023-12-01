@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogs/Probability/index.html
+permalink: /blogs/Statistics/Probability/index.html
 title: Probability
 ---
 
