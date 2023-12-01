@@ -6,7 +6,7 @@ title: Literature Review
 
 ## Audio
 
-- [AST: Audio Spectrogram Transformer](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/paper/Literature Review/AST - Audio Spectrogram Transformer.pptx)
+- [AST: Audio Spectrogram Transformer](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/paper/Literature%20Review/AST%20-%20Audio%20Spectrogram%20Transformer.pptx)
 
 
 

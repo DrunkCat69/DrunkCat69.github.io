@@ -6,18 +6,18 @@ title: Blogs
 
 ## Paper Reading
 
-- [Paper](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/paper/Paper.md)
-- [Literature Review](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/paper/Literature Review.md)
+- [Paper](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/paper/Paper.md)
+- [Literature Review](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/paper/Literature%20Review.md)
 
 ## Algorithm
 
-- [Machine Learning](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/Algorithm/Machine Learning.md)
-- [NLP](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/Algorithm/NLP.md)
-- [Audio](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/Algorithm/Audio.md)
+- [Machine Learning](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/Algorithm/Machine Learning.md)
+- [NLP](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/Algorithm/NLP.md)
+- [Audio](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/Algorithm/Audio.md)
 
 ## Statistics
 
-- [Probability](/Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/Statistics/Probability.md)
+- [Probability](https://github.com/DrunkCat69/DrunkCat69.github.io/blob/main/Statistics/Probability.md)
 
 ## Leave a Message
 
