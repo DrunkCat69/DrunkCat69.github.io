@@ -6,26 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f920e74b-b2c1-48b2-9d1a-c9834de4255b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs.md" beforeDir="false" afterPath="$PROJECT_DIR$/blogs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/Audio.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/Literature Review.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/Machine Learning.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/NLP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/Paper.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogs/Probability.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/caihanlin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/cat.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fav.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fav.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/hanlin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/prelection1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/speech1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/speech3.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/surfing1.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/swimming.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/swimming2.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avat.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
