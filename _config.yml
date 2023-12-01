@@ -10,12 +10,12 @@ owner:
   avatar: Zoso.jpeg
  # bio:
   email: huijialu0526@gmail.com
-  # cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
+  cv: /Users/drunkcat69/Documents/GitHub/DrunkCat69.github.io/cv/Huijia Lu.pdf
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   github: DrunkCat69
-  linkedin: Huijia Lu
+  linkedin: https://www.linkedin.com/in/huijia-lu-249405265/
   # facebook: caihanlin2002
-  instagram: zoso_18
+  instagram: https://www.instagram.com/zoso__18/
   # lastfm:
   # tumblr:
   # For Google Authorship https://plus.google.com/authorship
@@ -33,8 +33,6 @@ google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 links:
   - title: About Me
     url: /
-  - title: Hobbies
-    url: /hobbies/
   - title: Blogs
     url: /blogs/
 
