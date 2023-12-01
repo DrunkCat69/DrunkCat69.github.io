@@ -18,7 +18,3 @@ title: Blogs
 
 - [Probability](https://drunkcat69.github.io/blogs/Statistics/Probability)<br>
 
-## Leave a Message
-
-{% include disqus.html %} 
-
