@@ -6,10 +6,11 @@ title: Paper
 
 ## Audio
 
-- [AST: Audio Spectrogram Transformer](https://arxiv.org/pdf/2104.01778.pdf)
+- [AST: Audio Spectrogram Transformer](https://drunkcat69.github.io/blogs/paper/Audio/AST)
 
 ## NLP
 
 
 
 ## Machine learning
+
