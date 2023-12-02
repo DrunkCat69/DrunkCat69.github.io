@@ -37,7 +37,7 @@ The paper can be accessed from [here](https://arxiv.org/pdf/2104.01778.pdf)
 6. Propose an approach for transferring knowledge from the Vision Transformer (ViT) pretrained on ImageNet to AST
 7. propose a cut and bi-linear interpolate method for positional embedding adaptation.
 
-![image-20231202161822377](C:\Users\V\AppData\Roaming\Typora\typora-user-images\image-20231202161822377.png)
+![image-20231202161822377](https://drunkcat69.github.io/images/Audio/AST.png)
 
 ## Experiments
 
