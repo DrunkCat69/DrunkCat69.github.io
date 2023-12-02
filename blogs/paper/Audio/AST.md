@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /blogs/paper/AST/index.html
-title: Paper
+permalink: /blogs/paper/Audio/AST/index.html
+title: AST: Audio Spectrogram Transformer
 ---
 
 # AST: Audio Spectrogram Transformer
