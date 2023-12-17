@@ -127,5 +127,5 @@ title: Hadoop
 
 # Ref:
 
-[大数据Hadoop原理介绍+安装+实战操作 (HDFS+YARN+MapReduce)](https://www.cnblogs.com/liugp/p/16101242.html#1hdfs%E5%AE%9E%E6%88%98%E6%93%8D%E4%BD%9C)
+[大数据Hadoop原理介绍+安装+实战操作 (HDFS+YARN+MapReduce)](https://www.cnblogs.com/liugp/p/16101242.html)
 
