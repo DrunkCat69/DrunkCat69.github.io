@@ -64,8 +64,8 @@ $\beta$ = P(fail to reject | null FALSE) 接受了本该错的
 
 sensitivity = 1 - $\beta$, often 80%
 
-![small sample](https://drunkcat69.github.io/images/DBMS/AB Test/small sample.png)
+![small sample](https://drunkcat69.github.io/images/AB Test/AB Test/small sample.png)
 
 **Large sample: $\alpha$ same, $\beta$ low**
 
-![large sample](https://drunkcat69.github.io/images/DBMS/AB Test/large sample.png)
+![large sample](https://drunkcat69.github.io/images/AB Test/AB Test/large sample.png)
