@@ -69,3 +69,7 @@ sensitivity = 1 - $\beta$, often 80%
 **Large sample: $\alpha$ same, $\beta$ low**
 
 ![large sample](https://drunkcat69.github.io/images/AB Test/AB Test/large sample.png)
+
+
+
+### Method
