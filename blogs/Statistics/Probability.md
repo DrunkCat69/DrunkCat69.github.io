@@ -6,6 +6,8 @@ title: Probability
 
 # A/B Testing
 
+
+
 ## 1. Overview
 
 ### 1.1 What is A/B Testing?
@@ -22,7 +24,7 @@ A general methodology used online when you wanna test out a new product or a fea
 
   3) can't really tell you if you're missing something
 
-## 1.3 Choose a metric
+### 1.3 Choose a metric
 
 $$
 click\ through\ rate = \frac{number\ of\ clicks}{number\ of\ page\ views}
@@ -39,6 +41,8 @@ $$
 3. All trials are **independent**
 4. Identical distribution (i.e p same for all)
 
+
+
 #### One sample Z test about p
 
 **Assumption:** 
@@ -50,22 +54,46 @@ $$
 - margin of error = $Z \ *\ \sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
 - Z = $\frac{\hat{p}\ -\ p}{\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}}$
 
+
+
 **Confidence interval =  $\hat{p}$ +-  ME (margin of error)**
+
+**Practical significant: refers to the real-world importance or meaningfulness of an effect or result.**
+
+比如通过考试成绩来判断study program的有效性，我们把5%认定为是有practical significant (i.e. an efffect of 4 points or less is too small to care about). 在进行了实验后，我们发现两组有statistically significant difference，参加study program的人得分比没参加的多了3%（百分制）。然而根据先前定的practical significant  来看，3%是小于5%的，所以即使我们的实验证明了study program确实能提高分数，但在现实情况下，参与者在study program上所花的时间和金钱不值得只提高3%。
+
+
 
 #### Size V.S. power trade-off
 
 Statistical power helps us find how many samples do we need to have statistical significance.
 
-$\alpha$ = P(reject null | null TRUE) 拒绝了原本对的
+$\alpha$ = P(reject null  |  null TRUE) 拒绝了原本对的
 
-$\beta$ = P(fail to reject | null FALSE) 接受了本该错的
-
-**Small sample: $\alpha$ low, $\beta$ high**
+$\beta$ = P(fail to reject  |  null FALSE) 接受了本该错的
 
 sensitivity = 1 - $\beta$, often 80%
 
+
+
+**Small sample: $\alpha$ low, $\beta$ high**
+
 ![small sample](https://drunkcat69.github.io/images/AB Test/small sample.png)
+
+
 
 **Large sample: $\alpha$ same, $\beta$ low**
 
 ![large sample](https://drunkcat69.github.io/images/AB Test/large sample.png)
+
+#### confidence interval case breakdown
+
+case2: neutral change
+
+case4: the confidence interval bounds are outside of what's practically significant, it could be causing them to increase or decrease
+
+case5: confidence interval overlaps 0, there might not even be a change at all
+
+case6: it's possible your change is not practically significant
+
+![CI cases](https://drunkcat69.github.io/images/AB Test/CI cases.png)
