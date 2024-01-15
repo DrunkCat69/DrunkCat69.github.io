@@ -41,7 +41,7 @@ timezone: China/Beijing
 future: true
 highlighter: rouge
 markdown: kramdown
-# markdown: redcarpet
+#markdown: redcarpet
 # pygments: true
 
 
