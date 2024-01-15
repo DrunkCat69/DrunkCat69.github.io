@@ -88,12 +88,10 @@ sensitivity = 1 - $\beta$, often 80%
 
 #### confidence interval case breakdown
 
-case2: neutral change
-
-case4: the confidence interval bounds are outside of what's practically significant, it could be causing them to increase or decrease
-
-case5: confidence interval overlaps 0, there might not even be a change at all
-
-case6: it's possible your change is not practically significant
-
 ![CI cases](https://drunkcat69.github.io/images/AB Test/CI cases.png)
+
+- case2: neutral change
+- case4: the confidence interval bounds are outside of what's practically significant, it could be causing them to increase or decrease
+- case5: confidence interval overlaps 0, there might not even be a change at all
+- case6: it's possible your change is not practically significant
+
