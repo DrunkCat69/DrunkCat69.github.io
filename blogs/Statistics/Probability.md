@@ -95,3 +95,21 @@ sensitivity = 1 - $\beta$, often 80%
 - case5: confidence interval overlaps 0, there might not even be a change at all
 - case6: it's possible your change is not practically significant
 
+
+
+## 2. Choosing and Characterizing Metrics
+
+Types of Metrics:
+
+1) Sanity checking metrics (Invariant Metrics) — can be multiple metrics. Eg. When changing the page and testing CTR, latency & load times should be invariant
+
+2) Evaluation metrics — one or multiple.
+
+For multiple metrics, composite metrics and OEC (overall evaluation criterion), they are hard to define (it need to agree on a definition/end up looking all the individual metrics).
+
+
+
+
+
+
+
