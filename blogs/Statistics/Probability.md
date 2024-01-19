@@ -107,9 +107,38 @@ Types of Metrics:
 
 For multiple metrics, composite metrics and OEC (overall evaluation criterion), they are hard to define (it need to agree on a definition/end up looking all the individual metrics).
 
+### Metric Definition
 
+1. come up with a high-level concept for a metric, such as "active users", which can be understood by everyone.
+2. details: how do you define "active";
+3. summarize all of these individual data measurements into a single metric such as count or sum;
 
+### Refining the customer funnel (Udacity example)
 
+- Homepage visits
+- Exploring the site
+  - Users who view course list
+  - Users who view course details
+- Create an account
+  - Users who enroll in a course
+  - Users who finish lesson 1，2，etc.
+  - Users who sign up for coaching at various levels
+- Completeing a course
+  - Users who enroll in a second class
+  - Users who gets jobs
 
+![customer funnel](https://drunkcat69.github.io/images/AB Test/customer funnel.png)
 
+### Metric Choosing
 
+![metric choosing](https://drunkcat69.github.io/images/AB Test/metric choosing.png)
+
+### Difficult metrics
+
+- Don't have access to data
+- takes too long
+
+### Technique to deal with difficulty
+
+1. **External Data**: Use **industry metrics** from external data (Neilson, comscore), **Survey data** (Pew, Forrester), **Academic research**.
+2. **Internal Existing Data**: Retrospective analysis (correlation but not causation), running experiments, user experience research, surveys, and focus groups.
