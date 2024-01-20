@@ -142,3 +142,38 @@ For multiple metrics, composite metrics and OEC (overall evaluation criterion), 
 
 1. **External Data**: Use **industry metrics** from external data (Neilson, comscore), **Survey data** (Pew, Forrester), **Academic research**.
 2. **Internal Existing Data**: Retrospective analysis (correlation but not causation), running experiments, user experience research, surveys, and focus groups.
+
+**Retrospective analysis:** used to look at how a metric changes in response to past changes or experiments. This can help establish a baseline and develop theories.
+
+### Techniques to Gather Additional Data
+
+- User Experience Research (UER)
+
+  +good for brainstorming
+
+  +can use special equipment (catch eye movement)
+
+  -want to validate results
+
+- Focus Groups
+
+  +get feedback on hypotheticals
+
+  -Run the risk of group think
+
+- Surveys
+
+  +Useful for metrics you cannot directly measure (whether student who take course get job)
+
+  -Can't directly compare to other results (more observational methods)
+
+## Metric definitions
+
+High-level metric: click through probability:  $\frac{users\ who\ click}{users\ who\ visit}$
+
+Def #1 (Cookie probability): For each time interval, $\frac{number\ of\ cookies\ that\ click} {number\ of\ cookies}$, for users who **clicks the back button and returns to a previously visited page**, the browser may **retrieve the cached version of that page** instead of making a new request to the server. 即返回前一页, present cookie仍存在。
+
+Def #2 (Pageview probability): $\frac{Number\ of\ pageviews\ with\ a\ click\ within\ time\ interval}{number\ of\ pageviews}$
+
+Def #3 (Rate): $\frac{Number\ of\ clicks}{Number\ of\ pageviews}$
+
