@@ -177,3 +177,16 @@ Def #2 (Pageview probability): $\frac{Number\ of\ pageviews\ with\ a\ click\ wit
 
 Def #3 (Rate): $\frac{Number\ of\ clicks}{Number\ of\ pageviews}$
 
+### Summary Metrics
+
+Establish a few characteristics for your metric:
+
+1. Sensitivity and robustness
+2. Characterize the distribution: retrospective analysis
+
+Four categories of metrics to keep in mind:
+
+- sums and counts
+- Distributional metrics: means, median, and percentiles (75th, 90th)
+- Probabilities and rates
+- Ratios
