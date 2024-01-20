@@ -17,12 +17,10 @@ A general methodology used online when you wanna test out a new product or a fea
 ### 1.2 Pros & Cons
 
 - **useful:** 1) help you climb to the peak of your current mountain
-
-- **not useful:** 1) test new experiences; old users may resist against the new version (change aversion), or old users may all go for the new experience, then test everything (novelty effect). Two issues to consider when it comes to a new experience: (1) what is your baseline of comparison? (2) how much time do you need in order for your users to adapt to the new experience, so that you can actually say what is the plateaued experience and make a robust decision? 
-
-  2) long term effect is hard to test too, such as a website that recommends apartment rentals; note update brand or logo can't use ab testing, it's surprisingly emotional and users need some time to get used to new logo 
-
-  3) can't really tell you if you're missing something
+- **not useful:** 
+- test new experiences; old users may resist against the new version (change aversion), or old users may all go for the new experience, then test everything (novelty effect). Two issues to consider when it comes to a new experience: (1) what is your baseline of comparison? (2) how much time do you need in order for your users to adapt to the new experience, so that you can actually say what is the plateaued experience and make a robust decision? 
+  - long term effect is hard to test too, such as a website that recommends apartment rentals; note update brand or logo can't use ab testing, it's surprisingly emotional and users need some time to get used to new logo
+- can't really tell you if you're missing something
 
 ### 1.3 Choose a metric
 
@@ -45,22 +43,18 @@ $$
 
 #### One sample Z test about p
 
-**Assumption:** 
-
-- population is large enough to invoke the CLT (**To use normal**): N > 25,  $N\ *\ \hat{p}$ > 5 **and** $N\ (1- \hat{p})$ > 5
-
-- Expection probability:  $\hat{p} = \frac{X}{N}$
-- Standard deviation: $\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
-- margin of error = $Z \ *\ \sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
-- Z = $\frac{\hat{p}\ -\ p}{\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}}$
+- **Assumption:** 
+  - population is large enough to invoke the CLT (**To use normal**): N > 25,  $N\ *\ \hat{p}$ > 5 **and** $N\ (1- \hat{p})$ > 5
+  - Expection probability:  $\hat{p} = \frac{X}{N}$
+  - Standard deviation: $\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
+  - margin of error = $Z \ *\ \sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
+  - Z = $\frac{\hat{p}\ -\ p}{\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}}$
 
 
+- **Confidence interval =  $\hat{p}$ +-  ME (margin of error)**
 
-**Confidence interval =  $\hat{p}$ +-  ME (margin of error)**
-
-**Practical significant: refers to the real-world importance or meaningfulness of an effect or result.**
-
-比如通过考试成绩来判断study program的有效性，我们把5%认定为是有practical significant (i.e. an efffect of 4 points or less is too small to care about). 在进行了实验后，我们发现两组有statistically significant difference，参加study program的人得分比没参加的多了3%（百分制）。然而根据先前定的practical significant  来看，3%是小于5%的，所以即使我们的实验证明了study program确实能提高分数，但在现实情况下，参与者在study program上所花的时间和金钱不值得只提高3%。
+- **Practical significant: refers to the real-world importance or meaningfulness of an effect or result.**
+  - 比如通过考试成绩来判断study program的有效性，我们把5%认定为是有practical significant (i.e. an efffect of 4 points or less is too small to care about). 在进行了实验后，我们发现两组有statistically significant difference，参加study program的人得分比没参加的多了3%（百分制）。然而根据先前定的practical significant  来看，3%是小于5%的，所以即使我们的实验证明了study program确实能提高分数，但在现实情况下，参与者在study program上所花的时间和金钱不值得只提高3%。
 
 
 
@@ -101,9 +95,8 @@ sensitivity = 1 - $\beta$, often 80%
 
 Types of Metrics:
 
-1) Sanity checking metrics (Invariant Metrics) — can be multiple metrics. Eg. When changing the page and testing CTR, latency & load times should be invariant
-
-2) Evaluation metrics — one or multiple.
+1. Sanity checking metrics (Invariant Metrics) — can be multiple metrics. Eg. When changing the page and testing CTR, latency & load times should be invariant
+2. Evaluation metrics — one or multiple.
 
 For multiple metrics, composite metrics and OEC (overall evaluation criterion), they are hard to define (it need to agree on a definition/end up looking all the individual metrics).
 
@@ -171,11 +164,13 @@ For multiple metrics, composite metrics and OEC (overall evaluation criterion), 
 
 High-level metric: click through probability:  $\frac{users\ who\ click}{users\ who\ visit}$
 
-Def #1 (Cookie probability): For each time interval, $\frac{number\ of\ cookies\ that\ click} {number\ of\ cookies}$, for users who **clicks the back button and returns to a previously visited page**, the browser may **retrieve the cached version of that page** instead of making a new request to the server. 即返回前一页, present cookie仍存在。
+- Def #1 (Cookie probability): For each time interval, $\frac{number\ of\ cookies\ that\ click} {number\ of\ cookies}$, for users who **clicks the back button and returns to a previously visited page**, the browser may **retrieve the cached version of that page** instead of making a new request to the server. 即返回前一页, present cookie仍存在。
 
-Def #2 (Pageview probability): $\frac{Number\ of\ pageviews\ with\ a\ click\ within\ time\ interval}{number\ of\ pageviews}$
+- Def #2 (Pageview probability): $\frac{Number\ of\ pageviews\ with\ a\ click\ within\ time\ interval}{number\ of\ pageviews}$
 
-Def #3 (Rate): $\frac{Number\ of\ clicks}{Number\ of\ pageviews}$
+
+- Def #3 (Rate): $\frac{Number\ of\ clicks}{Number\ of\ pageviews}$
+
 
 ### Summary Metrics
 
