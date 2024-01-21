@@ -210,10 +210,10 @@ Suppose you run an experiment where you measure the number of visits to your hom
 | ----------------- | --------------------- | ------------------------------------- |
 | Probability       | binomial **(normal)** | $\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$ |
 | mean              | normal                | $\frac{\sigma^2}{N}$                  |
-| median/percentile | depends^1^            | depends                               |
+| median/percentile | depends<sup> 1</sup>  | depends                               |
 | count/difference  | normal **(maybe)**    | Var(X) + Var(Y)                       |
-| rates             | poisson^2^            | $\bar{X}$                             |
-| ratios            | depends               | depends                               |
+| rates             | poisson<sup>2</sup>   | $\bar{X}$                             |
+| ratios            | depends<sup>3</sup>   | depends                               |
 
 1. median - could be non-normal if data is non-normal
 
