@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /blogs/Statistics/Probability/index.html
-title: Probability
+permalink: /blogs/Statistics/AB Testing/index.html
+title: AB Testing
 ---
 
 # A/B Testing

@@ -16,7 +16,7 @@ title: Blogs
 
 ## Statistics
 
-- [Probability](https://drunkcat69.github.io/blogs/Statistics/Probability)<br>
+- [AB Testing](https://drunkcat69.github.io/blogs/Statistics/AB Testing)<br>
 
 ## DBMS
 
