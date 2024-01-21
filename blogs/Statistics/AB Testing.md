@@ -185,3 +185,62 @@ Four categories of metrics to keep in mind:
 - Distributional metrics: means, median, and percentiles (75th, 90th)
 - Probabilities and rates
 - Ratios
+
+**Sensitivity:** how well a metric can detect changes that you care about
+
+**Robustness:**  the metric's ability to remain stable when there are changes that you don't care about, it doesn't move a lot when nothing interesting has happened.
+
+**2 WAYS to Measure:**
+
+1. Running experiments, a/a experiment to determine if they're too sensitive.
+2. **Retrospective analysis of your logs (robustness).** Involving looking back at past experiments or changes made to the website and examining if the metric values moved in conjunction with those changes (if remain stable or show minimal change, indicate robust). 
+3. Analyze the history of the metric and try to find causes for any major changes observed **(hindsight)**. It can provide valuable insight into the behavior of the metric over time and help you understand its robustness.
+
+
+
+### Absolute vs. relative difference
+
+Suppose you run an experiment where you measure the number of visits to your homepage, and you measure 5000 visits in the control and 7000 in the experiment. Then the absolute difference is the result of subtracting one from the other, that is, 2000. The relative difference is the absolute difference divided by the control metric, that is, 40% ($\frac{2000}{5000} * 100\%$).
+
+
+
+### Variability
+
+| Type of Metric    | Distribution          | Estimated Variance                    |
+| ----------------- | --------------------- | ------------------------------------- |
+| Probability       | binomial **(normal)** | $\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$ |
+| mean              | normal                | $\frac{\sigma^2}{N}$                  |
+| median/percentile | depends^1^            | depends                               |
+| count/difference  | normal **(maybe)**    | Var(X) + Var(Y)                       |
+| rates             | poisson^2^            | $\bar{X}$                             |
+| ratios            | depends               | depends                               |
+
+1. median - could be non-normal if data is non-normal
+
+   ![variability](https://drunkcat69.github.io/images/AB Test/variability.png)
+
+2. **extreme version of normal distribution, N super large, p super small.** 泊松分布是指某段**连续的时间内**某件事情发生的次数，而且“某件事情”发生所用的时间是可以忽略的。例如，在五分钟内，电子元件遭受脉冲的次数，就服从于泊松分布。假如你把“连续的时间”分割成无数小份，那么每个小份之间都是相互独立的。在每个很小的时间区间内，电子元件都有可能“遭受到脉冲”或者“没有遭受到脉冲”，这就可以被认为是一个p很小的二项分布。而因为“连续的时间”被分割成无穷多份，因此n(试验次数)很大。所以，泊松分布可以认为是二项分布的一种极限形式。
+
+3. different ratio use different data, so it depend on the distribution for the numerator and the denominator of the ratio.
+
+
+
+### Empirical Variability
+
+For complicated metrics, the distribution can be weird. You might want to shift to an empirical estimate.
+
+**A/A testing:** control A against another control A, and there’s actually **no change in what the users are seeing.** What that means is that any differences that you measure are due to the underlying variability, maybe of your system or the user population, what users are doing, all of those types of things.
+
+Pros: If your experiment system is itself complicated, it’s actually a good test of your system.
+
+Bootstrap: 将一个大样本按照有放回的取样方法，取出一定数量的新样本，把这些random subset当作simulated experiment. In reality, what we have is a whole gradation of different methods. If the bootstrap estimate is agreeing with your analytical estimate, you can probably move on. If not, consider big A/A testing.
+
+![bootstrap](https://drunkcat69.github.io/images/AB Test/bootstrap.png)
+
+### Uses of A/A Test
+
+- Compare results to what you expect (sanity check). [Example](https://docs.google.com/spreadsheets/d/1ZIyIy23VVDVU_86uK_5RfMQyhOq0ORcoy9gQr2hTmsI/edit#gid=0)
+- Estimate variance and calculate confidence
+- Directly estimate confidence interval
+
+![directly](https://drunkcat69.github.io/images/AB Test/directly.png)
