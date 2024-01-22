@@ -14,6 +14,8 @@ title: AB Testing
 
 A general methodology used online when you wanna test out a new product or a feature. Use two sets of users: control set (existing product) and experiment set (new version) by obsevering how these users respond differently to determine which version of feature/product is better.
 
+
+
 ### 1.2 Pros & Cons
 
 - **useful:** 1) help you climb to the peak of your current mountain
@@ -21,6 +23,8 @@ A general methodology used online when you wanna test out a new product or a fea
 - test new experiences; old users may resist against the new version (change aversion), or old users may all go for the new experience, then test everything (novelty effect). Two issues to consider when it comes to a new experience: (1) what is your baseline of comparison? (2) how much time do you need in order for your users to adapt to the new experience, so that you can actually say what is the plateaued experience and make a robust decision? 
   - long term effect is hard to test too, such as a website that recommends apartment rentals; note update brand or logo can't use ab testing, it's surprisingly emotional and users need some time to get used to new logo
 - can't really tell you if you're missing something
+
+
 
 ### 1.3 Choose a metric
 
@@ -62,9 +66,9 @@ $$
 
 Statistical power helps us find how many samples do we need to have statistical significance.
 
-$\alpha$ = P(reject null | null TRUE) 拒绝了原本对的
+$\alpha$ = P(reject null I null TRUE) 拒绝了原本对的
 
-$\beta$ = P(fail to reject | null FALSE) 接受了本该错的
+$\beta$ = P(fail to reject I null FALSE) 接受了本该错的
 
 sensitivity = 1 - $\beta$, often 80%
 
@@ -100,11 +104,15 @@ sensitivity = 1 - $\beta$, often 80%
 
 For multiple metrics, composite metrics and OEC (overall evaluation criterion), they are hard to define (it need to agree on a definition/end up looking all the individual metrics).
 
+
+
 ### Metric Definition
 
 1. come up with a high-level concept for a metric, such as "active users", which can be understood by everyone.
 2. details: how do you define "active";
 3. summarize all of these individual data measurements into a single metric such as count or sum;
+
+
 
 ### Refining the customer funnel (Udacity example)
 
@@ -131,12 +139,16 @@ For multiple metrics, composite metrics and OEC (overall evaluation criterion), 
 - Don't have access to data
 - takes too long
 
+
+
 ### Technique to deal with difficulty
 
 1. **External Data**: Use **industry metrics** from external data (Neilson, comscore), **Survey data** (Pew, Forrester), **Academic research**.
 2. **Internal Existing Data**: Retrospective analysis (correlation but not causation), running experiments, user experience research, surveys, and focus groups.
 
 **Retrospective analysis:** used to look at how a metric changes in response to past changes or experiments. This can help establish a baseline and develop theories.
+
+
 
 ### Techniques to Gather Additional Data
 
@@ -160,6 +172,8 @@ For multiple metrics, composite metrics and OEC (overall evaluation criterion), 
 
   -Can't directly compare to other results (more observational methods)
 
+
+
 ## Metric definitions
 
 High-level metric: click through probability:  $\frac{users\ who\ click}{users\ who\ visit}$
@@ -170,6 +184,7 @@ High-level metric: click through probability:  $\frac{users\ who\ click}{users\ 
 
 
 - Def #3 (Rate): $\frac{Number\ of\ clicks}{Number\ of\ pageviews}$
+
 
 
 ### Summary Metrics
@@ -245,3 +260,49 @@ Suppose you run an experiment where you measure the number of visits to your hom
 
 
 ## 3. Design an experiment
+
+### Unit of Diversion Overview
+
+A unit of diversion is how we define what an individual subject is in the experiment. 根据unit of diversion去分配individual到不同的组中. 见下面的example。
+
+You are doing an event based diversion, a cookie-based, or a user id, these are all what we call our unit of diversion.
+
+#### **Commonly used**
+
+- User id
+  - stable, unchanging
+  - personally identifiable
+- Anonymous id (cookie)
+  - change when switch device (laptop to mobile) OR browser (chrome to safari)
+  - users can clear cookie
+- Event
+  - no consistent experience
+  - use only for non-user-visible changes
+
+#### Less Common
+
+- Device id
+  - only available for mobile
+  - tied to specific device
+  - unchangeable by user
+  - personally identifiable
+- IP address
+  - change when location changes
+
+#### Three main Considerations when choosing diversion
+
+- User consistency
+  - Most users will not notice ranking changes, so event-based diversion is good
+  - event < cookie < id
+- Ethical consideration for diversion
+- Variability
+
+#### Unit of analysis: the denominator of the metric
+
+- when your unit of analysis = unit of diversion, then the variability tends to be lower and close to the analytical estimate.
+
+#### Inter- vs. Intra-user Experiments
+
+- Intra-user Experiment: expose the same user to the feature being on/off over time.
+- Interleaved Experiment: expose the same user to the A and the B side at the same time. Typically, this only work in cases where you are looking at reordering a list.
+- Inter-user experiment: got different ppl on the A side and on the B side. i.e. AB testing
