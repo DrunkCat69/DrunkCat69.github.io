@@ -62,9 +62,9 @@ $$
 
 Statistical power helps us find how many samples do we need to have statistical significance.
 
-$\alpha$ = P(reject null  |  null TRUE) 拒绝了原本对的
+$\alpha$ = P(reject null | null TRUE) 拒绝了原本对的
 
-$\beta$ = P(fail to reject  |  null FALSE) 接受了本该错的
+$\beta$ = P(fail to reject | null FALSE) 接受了本该错的
 
 sensitivity = 1 - $\beta$, often 80%
 
@@ -93,7 +93,7 @@ sensitivity = 1 - $\beta$, often 80%
 
 ## 2. Choosing and Characterizing Metrics
 
-Types of Metrics:
+**Types of Metrics:**
 
 1. Sanity checking metrics (Invariant Metrics) — can be multiple metrics. Eg. When changing the page and testing CTR, latency & load times should be invariant
 2. Evaluation metrics — one or multiple.
@@ -227,13 +227,10 @@ Suppose you run an experiment where you measure the number of visits to your hom
 
 ### Empirical Variability
 
-For complicated metrics, the distribution can be weird. You might want to shift to an empirical estimate.
-
-**A/A testing:** control A against another control A, and there’s actually **no change in what the users are seeing.** What that means is that any differences that you measure are due to the underlying variability, maybe of your system or the user population, what users are doing, all of those types of things.
-
-Pros: If your experiment system is itself complicated, it’s actually a good test of your system.
-
-Bootstrap: 将一个大样本按照有放回的取样方法，取出一定数量的新样本，把这些random subset当作simulated experiment. In reality, what we have is a whole gradation of different methods. If the bootstrap estimate is agreeing with your analytical estimate, you can probably move on. If not, consider big A/A testing.
+- For complicated metrics, the distribution can be weird. You might want to shift to an empirical estimate.
+- **A/A testing:** control A against another control A, and there’s actually **no change in what the users are seeing.** What that means is that any differences that you measure are due to the underlying variability, maybe of your system or the user population, what users are doing, all of those types of things.
+- Pros: If your experiment system is itself complicated, it’s actually a good test of your system.
+- **Bootstrap:** 将一个大样本按照有放回的取样方法，取出一定数量的新样本，把这些random subset当作simulated experiment. In reality, what we have is a whole gradation of different methods. If the bootstrap estimate is agreeing with your analytical estimate, you can probably move on. If not, consider big A/A testing.
 
 ![bootstrap](https://drunkcat69.github.io/images/AB Test/bootstrap.png)
 
@@ -244,3 +241,7 @@ Bootstrap: 将一个大样本按照有放回的取样方法，取出一定数量
 - Directly estimate confidence interval
 
 ![directly](https://drunkcat69.github.io/images/AB Test/directly.png)
+
+
+
+## 3. Design an experiment
