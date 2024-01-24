@@ -306,3 +306,48 @@ You are doing an event based diversion, a cookie-based, or a user id, these are 
 - Intra-user Experiment: expose the same user to the feature being on/off over time.
 - Interleaved Experiment: expose the same user to the A and the B side at the same time. Typically, this only work in cases where you are looking at reordering a list.
 - Inter-user experiment: got different ppl on the A side and on the B side. i.e. AB testing
+
+#### population vs. cohort
+
+**Cohort:** a group of individuals who share a common characteristic or experience, also a subset of population.
+
+Use cohort instead of population when you are looking for learning effects, examining user retention, want to increase user activity, or anything requiring user to be established.
+
+#### Sizing
+
+The size of the experiment is determined based on practical significance, statistical significance, and the desired sensitivity. ([example](https://colab.research.google.com/drive/1j0CBUb8t-BhiEYTVfjg6Mc20M3eYIjtH#scrollTo=9pbR93_Jb7Iv))
+
+It is also important to consider factors such as the choice of metric, unit of diversion, significant level ($\alpha$), reduced power (1 - $\beta$) (i.e. increase $\beta$) and population, as these can affect the variability of the metric.
+
+Taken Udacity as example, there are three possible way to reduce the size of an experiment
+
+1. Change unit of diversion to page view
+   - Makes unit of diversion same as unit of analysis
+2. Target experiment to specific traffic
+   - non-English traffic will dilute the results
+   - could impact choice of practical significance boundary
+3. Change metric to cookie-based click through probability
+   - often doesn't make significant difference
+   - If there is a difference, variability would probably go down
+
+#### Duration vs. Exposure
+
+What fraction of your traffic you're going to send through the experiment? The duration of your experiment is related to **the proportion of traffic you're sending through your experiment.** 
+
+We couldn't run on all of traffic to get results quicker for several reasons: 
+
+1. safety to make sure the function works well; 
+2. press we don't want a lot of people to know it before it works; 
+3. other things impact the variability such as holiday.
+
+#### Learning Effect
+
+- When there’s a new change in the beginning, users may against the change (change version) or use the change a lot (novelty effect). But over time, user behavior becomes stable, which is called the plateau stage. The key thing to measure learning effect is time, but in reality, you don’t have that much luxury of taking that much time to make a decision. **Suggestion: run on a smaller group of users for a longer period of time.** 
+
+
+- If you do have much time, you also need to notice the following points: 
+  1. choosing the unit of diversion correctly; 
+  2. dosage: how often we see the change, then you probably want to be using cohort as opposed to just a population; 
+  3. risk and duration.
+
+- Pre-periods and post-periods: A/A test before and after the experiment.
