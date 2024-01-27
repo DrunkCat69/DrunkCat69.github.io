@@ -408,5 +408,5 @@ The two-tail p value is 0.0156 < 0.05, reject H<sub>0</sub>，meaning there is d
 
 Simpson's Paradox is a phenomenon in statistics where within each subgroup, the results are stable. However, when you aggregate them all together, it's the mix of subgroups that actually drives your result. 类似极值影响overall，需要判断是否change争对不同的group (control/experiment)。
 
-![simpson paradox]((https://drunkcat69.github.io/images/AB Test/simpson paradox.png))
+![simpson paradox](https://drunkcat69.github.io/images/AB Test/simpson paradox.png)
 
