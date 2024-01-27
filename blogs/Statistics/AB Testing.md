@@ -124,7 +124,7 @@ For multiple metrics, composite metrics and OEC (overall evaluation criterion), 
   - Users who enroll in a course
   - Users who finish lesson 1，2，etc.
   - Users who sign up for coaching at various levels
-- Completeing a course
+- Completing a course
   - Users who enroll in a second class
   - Users who gets jobs
 
@@ -349,5 +349,64 @@ We couldn't run on all of traffic to get results quicker for several reasons:
   1. choosing the unit of diversion correctly; 
   2. dosage: how often we see the change, then you probably want to be using cohort as opposed to just a population; 
   3. risk and duration.
-
 - Pre-periods and post-periods: A/A test before and after the experiment.
+
+
+
+## 4. Analyzing Results
+
+### Sanity Check
+
+- Choosing invariant metrics (1. population sizing metrics 2. other metrics don't expect to change)
+- checking invariants
+
+#### Example: experiment for two weeks
+
+Total control: 64454                                       Total experiment: 61818
+
+Whether the difference is within expectations?
+
+#### Solution 1:
+
+1. Compute **standard deviation** of binomial with probability 0.5 of success (coin situation)
+
+   SD = $\sqrt{\frac{0.5 * 0.5}{64454\ +\ 61818}}$ = 0.0014
+
+2. Multiply by z-score to get **margin of error**
+
+   m = SD * 1.96 (95% confidence interval) = 0.0027
+
+3. Compute confidence interval around 0.5
+
+   0.4973 (0.5 - 0.0027) to 0.5027 (0.5 + 0.0027)
+
+4. Check whether observed fraction is within interval
+
+   $\hat{p}$ = $\frac{64454}{64454\ +\ 61818}$ = 0.5104 > 0.5027, so sth is incorrect.
+
+#### Solution 2:
+
+Checking whether any particular day (weekend, holiday) stands out as causing the problem or whether it seems to be an overall pattern.
+
+### Signal Metric
+
+#### Effect Size
+
+![single metric](https://drunkcat69.github.io/images/AB Test/single metric.png)
+
+The effect size test is statistically significant if the confidence interval **does not include zero**, and the sign test is statistically significant if **the p-value < alpha (retain H<sub>0</sub>).**
+
+##### Sign Test (non-parameter) 
+
+The two-tail p value is 0.0156 < 0.05, reject H<sub>0</sub>，meaning there is difference between the control and experimental groups.
+
+![sign test](https://drunkcat69.github.io/images/AB Test/sign test.png)
+
+[Online Calculator](https://www.graphpad.com/quickcalcs/binomial1.cfm)
+
+### Simpson's Paradox
+
+Simpson's Paradox is a phenomenon in statistics where within each subgroup, the results are stable. However, when you aggregate them all together, it's the mix of subgroups that actually drives your result. 类似极值影响overall，需要判断是否change争对不同的group (control/experiment)。
+
+![simpson paradox]((https://drunkcat69.github.io/images/AB Test/simpson paradox.png))
+
