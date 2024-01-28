@@ -66,9 +66,9 @@ $$
 
 Statistical power helps us find how many samples do we need to have statistical significance.
 
-$\alpha$ = P(reject null I null TRUE) 拒绝了原本对的
+$\alpha$ = P(reject null I null TRUE) 拒绝了原本对的，误报 (false positive)
 
-$\beta$ = P(fail to reject I null FALSE) 接受了本该错的
+$\beta$ = P(fail to reject I null FALSE) 接受了本该错的，漏报 (false negative)
 
 sensitivity = 1 - $\beta$, often 80%
 
@@ -410,3 +410,50 @@ Simpson's Paradox is a phenomenon in statistics where within each subgroup, the 
 
 ![simpson paradox](https://drunkcat69.github.io/images/AB Test/simpson paradox.png)
 
+#### Multiple metrics
+
+As you test more metrics, it becomes more likely that one of them will show a statistically significant result by chance.
+
+For example, let's say there are **3 metrics**, what's the chance of at least 1 false positive? **Assuming metrics are independent.**
+
+P(FP = 0) = 0.95 * 0.95 * 0.95 = 0.857
+
+P(FP >= 1) = 1 - 0.857 = 0.143
+
+![multiple metric](https://drunkcat69.github.io/images/AB Test/multiple metric.png)
+
+**Problem:** probability of any FP increases as increase number of metrics.
+
+**Solution:** Use higher confidence level for each metric
+
+**Method 1: Assume independence**
+
+- $\alpha$<sub>overall</sub> = 1 - (1 - $\alpha$<sub>individual</sub>)<sup> N</sup>
+
+**Method 2: Bonferroni Correction**
+
+- no assumption
+- conservative: guaranteed to give $\alpha$<sub>overall</sub> at least as small as specified
+
+**Other Method**
+
+- **Familywise error rate (FWER):** control probability that **any metrics shows a FP**, **AKA $\alpha$<sub>overall</sub>** 
+
+- **False discovery rate (FDR):** across a large number of metrics
+
+  FDR = E[$\frac{false\ positives}{rejections}$]
+
+  suppose there are 200 metrics, cap FDR at 0.05. This means u'r okay with 5 FP and 95 true positives in every experiment.
+
+#### Drawing Conclusions:
+
+- Do I have statistically significant and practically significant results in order to justify the change?
+- Do I understand what that change has actually done with regards to user experience? 
+- Is it worth it?
+
+#### Gotchas: Changes over time.
+
+When you are ramping up the change, you may see the effect flatten out, thus making the tested effect not repeatable. There are many reasons for this phenomenon: 
+
+- **Seasonality effect**, event-driven impact; **Solution:** Use hold-back method. Launch the change to everyone except for one small hold-back group of users and continue comparing their behavior to the control group.
+- **Novelty effect or change aversion:** Cohort analysis may be helpful.
