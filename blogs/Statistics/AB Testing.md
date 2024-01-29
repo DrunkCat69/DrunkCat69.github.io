@@ -53,6 +53,7 @@ $$
   - Standard deviation: $\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
   - margin of error = $Z \ *\ \sqrt{\frac{\hat{p}(1-\hat{p})}{N}}$
   - Z = $\frac{\hat{p}\ -\ p}{\sqrt{\frac{\hat{p}(1-\hat{p})}{N}}}$
+  - $\hat{d}$ = $\frac{X_{exp}}{N_{exp}}\ -\ \frac{X_{control}}{N_{control}} $
 
 
 - **Confidence interval =  $\hat{p}$ +-  ME (margin of error)**
@@ -457,3 +458,7 @@ When you are ramping up the change, you may see the effect flatten out, thus mak
 
 - **Seasonality effect**, event-driven impact; **Solution:** Use hold-back method. Launch the change to everyone except for one small hold-back group of users and continue comparing their behavior to the control group.
 - **Novelty effect or change aversion:** Cohort analysis may be helpful.
+
+
+
+## [Final Project](https://olgabelitskaya.github.io/P7_Design_an_A_B_Test_Overview.html)
