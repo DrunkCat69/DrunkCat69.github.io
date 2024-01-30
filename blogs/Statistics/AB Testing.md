@@ -461,4 +461,4 @@ When you are ramping up the change, you may see the effect flatten out, thus mak
 
 
 
-## [Final Project](https://olgabelitskaya.github.io/P7_Design_an_A_B_Test_Overview.html)
+[Final Project](https://olgabelitskaya.github.io/P7_Design_an_A_B_Test_Overview.html)
