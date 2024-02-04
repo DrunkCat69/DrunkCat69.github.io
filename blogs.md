@@ -22,3 +22,7 @@ title: Blogs
 ## DBMS
 
 - [Hadoop](https://drunkcat69.github.io/blogs/DBMS/Hadoop)<br>
+
+## Interview Questions
+
+- [Interview Questions](https://drunkcat69.github.io/blogs/Interview Questions)<br>
