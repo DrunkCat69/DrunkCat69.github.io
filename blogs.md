@@ -23,6 +23,11 @@ title: Blogs
 
 - [Hadoop](https://drunkcat69.github.io/blogs/DBMS/Hadoop)<br>
 
+## Accounting
+
+- [Accounting](https://drunkcat69.github.io/blogs/Accounting)<br>
+
 ## Interview Questions
 
 - [Interview Questions](https://drunkcat69.github.io/blogs/Interview Questions)<br>
+
