@@ -12,12 +12,12 @@ title: Big Data
 
 传统事务型数据库如 MySQL 用于做联机事务处理（OLTP），例如交易事件的发生等；而数据仓库主要用于联机分析处理（OLAP），例如出报表等。
 
-![数仓](https://drunkcat69.github.io/images/DBMS/Hadoop/数仓.png)
+![数仓](https://drunkcat69.github.io/images/DBMS/Big Data/数仓.png)
 
 注：ETL - Extract、Transform、Load
 
 **数据清洗：**
-![数据清洗](https://drunkcat69.github.io/images/DBMS/Hadoop/数据清洗.png)
+![数据清洗](https://drunkcat69.github.io/images/DBMS/Big Data/数据清洗.png)
 
 **2）数仓的特点**
 
@@ -46,4 +46,4 @@ title: Big Data
 - 方便定位问题，通过分层了解数据血缘关系，在出问题的时候通过回溯定位问题；
 - 简单化复杂问题，和分治法思想类似，分而治之，将复杂的问题简单化，还能解耦
 
-![数仓分层](https://drunkcat69.github.io/images/DBMS/Hadoop/数仓分层.png)
+![数仓分层](https://drunkcat69.github.io/images/DBMS/Big Data/数仓分层.png)
