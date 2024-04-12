@@ -22,6 +22,7 @@ title: Blogs
 ## DBMS
 
 - [Hadoop](https://drunkcat69.github.io/blogs/DBMS/Hadoop)<br>
+- [Big Data](https://drunkcat69.github.io/blogs/DBMS/Big Data)<br>
 
 ## Accounting
 

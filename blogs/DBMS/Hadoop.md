@@ -123,6 +123,34 @@ title: Hadoop
 
 
 
+**MapReduce**
+
+- 一个编程模型及实现，用于处理或生产超大数据集
+
+- 针对超大量数据，MapReduce解决如何在**很多台机器上并行计算**、数据分配及故障处理等问题。
+
+- Map函数处理一个键值对（key/value pair）的数据集合，输出中间结果（依然是键值对集合）；然后 Reduce 函数处理中间结果，合并具有相同 key 的 value 值得到最终输出。
+
+- **总的来说，MapReduce 所执行的分布式计算会以一组键值对作为输入，输出另一组键值对，用户则通过编写 Map 函数和 Reduce 函数来指定所要进行的计算。**
+
+- 例子：统计大量文档每个单词出现的次数（Word Count），伪代码如下：
+
+  ```
+  map(String key, String value):
+    // key: document name
+    // value: document contents
+    for each word w in value:
+      EmitIntermediate(w, “1”); #每个单词出现一次，赋予一个1的值
+  
+  reduce(String key, Iterator values):
+    // key: a word
+    // values: a list of counts
+    int result = 0;
+    for each v in values:
+      result += ParseInt(v);  #将之前的value(1)转换为int的格式
+    Emit(AsString(result));   #累加所有单词的出现次数
+  ```
+
 
 
 # Ref:
