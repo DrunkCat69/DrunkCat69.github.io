@@ -24,9 +24,9 @@ title: Blogs
 - [Hadoop](https://drunkcat69.github.io/blogs/DBMS/Hadoop)<br>
 - [Big Data](https://drunkcat69.github.io/blogs/DBMS/Big Data)<br>
 
-## Accounting
+## CPA
 
-- [Accounting](https://drunkcat69.github.io/blogs/Accounting)<br>
+- [Accounting](https://drunkcat69.github.io/blogs/CPA/Accounting)<br>
 
 ## Interview Questions
 

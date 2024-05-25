@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /blogs/Accounting/index.html
+permalink: /blogs/CPA/Accounting/index.html
 title: Accounting
 ---
 
