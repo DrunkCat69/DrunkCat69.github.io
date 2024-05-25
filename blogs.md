@@ -17,7 +17,6 @@ title: Blogs
 ## Statistics
 
 - [AB Testing](https://drunkcat69.github.io/blogs/Statistics/AB Testing)<br>
-- [STAT5002](https://drunkcat69.github.io/blogs/Statistics/STAT5002/)
 
 ## DBMS
 
