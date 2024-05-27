@@ -10,7 +10,7 @@ G' day! Here is **Huijia Lu (Zoso, 卢汇嘉)**.
 
 I am a master student major in **Data Science** at the University of Sydney (USYD). I obtained a Graduate Diploma in Economics from East China Normal University (ECNU) in 2020. In 2022, I completed my Bachelor's degree in Accounting at La Trobe University.
 
-I am now looking for job opportunity related to data analyst or MLE, if you are interested in any aspect of me, I would love to chat and collaborate, please email me at - huijialu0526@gmail.com.
+I am currently working at Shanghai Kaiquan Pump Co Ltd as a financial analyst. However, I am open to better opportunities. If you are interested in any aspect of my profile, I would love to chat and collaborate. Please feel free to email me at huijialu0526@gmail.com.
 
 <br>
 
