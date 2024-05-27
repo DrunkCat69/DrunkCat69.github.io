@@ -7,10 +7,3 @@ title: Paper
 ## Audio
 
 - [AST: Audio Spectrogram Transformer](https://drunkcat69.github.io/blogs/paper/Audio/AST)
-
-## NLP
-
-
-
-## Machine learning
-
